@@ -1,0 +1,44 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-calculator-ui-with-a-numeric-display-digit-buttons-0-9-decimal-point-operator-buttons-equals-button-and-a-clear-reset-button-operations-should-call-the-backend-actor-functions",
+      "featureTitle": "Build a calculator UI with a numeric display, digit buttons (0–9), decimal point, operator buttons (+, −, ×, ÷), equals button, and a clear/reset button. Operations should call the backend actor functions.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Calculator.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-clean-modern-visual-theme-with-a-dark-charcoal-background-crisp-white-display-text-and-bold-accent-colors-for-operator-keys-use-a-minimal-sans-serif-typography-and-a-card-style-layout-centered-on-the-page",
+      "featureTitle": "Apply a clean, modern visual theme with a dark charcoal background, crisp white display text, and bold accent colors for operator keys. Use a minimal sans-serif typography and a card-style layout centered on the page.",
+      "files": [
+        "frontend/src/components/Calculator.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Calculator-specific design tokens */
+    --background: 0.14 0.008 260;
+    --foreground: 0.95 0.005 260;
+
+    --card: 0.18 0.01 260;
+    --card-foreground: 0.95 0.005 260;
+
+    --popover: 0.18 0.01 260;
+    --popover-foreground: 0.95 0.005 260;
+
+    --primary: 0.72 0.18 55;
+    --primary-foreground: 0.12 0.005 260;
+
+    --secondary: 0.26 0.012 260;
+    --secondary-foreground: 0.9 0.005 260;
+
+    --muted: 0.22 0.01 260;
+    --muted-foreground: 0.6 0.01 260;
+
+    --accent: 0.72 0.18 55;
+    --accent-foreground: 0.12 0.005 260;
+
+    --destructive: 0.62 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+
+    --border: 0.28 0.012 260;
+    --input: 0.28 0.012 260;
+    --ring: 0.72 0.18 55;
+
+    --chart-1: 0.72 0.18 55;
+    --chart-2: 0.6 0.118 184;
+    --chart-3: 0.398 0.07 227;
+    --chart-4: 0.828 0.189 84;
+    --chart-5: 0.769 0.188 70;
+
+    --sidebar: 0.18 0.01 260;
+    --sidebar-foreground: 0.95 0.005 260;
+    --sidebar-primary: 0.72 0.18 55;
+    --sidebar-primary-foreground: 0.12 0.005 260;
+    --sidebar-accent: 0.26 0.012 260;
+    --sidebar-accent-foreground: 0.9 0.005 260;
+    --sidebar-border: 0.28 0.012 260;
+    --sidebar-ring: 0.72 0.18 55;
+
+    /* Calculator custom tokens */
+    --calc-bg: 0.12 0.008 260;
+    --calc-surface: 0.17 0.01 260;
+    --calc-display-bg: 0.10 0.006 260;
+    --calc-btn-digit: 0.24 0.012 260;
+    --calc-btn-digit-hover: 0.30 0.014 260;
+    --calc-btn-fn: 0.20 0.01 260;
+    --calc-btn-fn-hover: 0.26 0.012 260;
+    --calc-btn-operator: 0.72 0.18 55;
+    --calc-btn-operator-hover: 0.78 0.20 55;
+    --calc-btn-equals: 0.72 0.18 55;
+    --calc-btn-equals-hover: 0.80 0.22 55;
+    --calc-text-primary: 0.96 0.005 260;
+    --calc-text-secondary: 0.55 0.01 260;
+    --calc-text-operator: 0.12 0.005 260;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  .calc-btn-press {
+    transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.1s ease;
+  }
+
+  .calc-btn-press:active {
+    transform: scale(0.94);
+  }
+}

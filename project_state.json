@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "A simple calculator app.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-calculator-ui-with-a-numeric-display-digit-buttons-0-9-decimal-point-operator-buttons-equals-button-and-a-clear-reset-button-operations-should-call-the-backend-actor-functions",
+      "title": "Build a calculator UI with a numeric display, digit buttons (0–9), decimal point, operator buttons (+, −, ×, ÷), equals button, and a clear/reset button. Operations should call the backend actor functions.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-clean-modern-visual-theme-with-a-dark-charcoal-background-crisp-white-display-text-and-bold-accent-colors-for-operator-keys-use-a-minimal-sans-serif-typography-and-a-card-style-layout-centered-on-the-page",
+      "title": "Apply a clean, modern visual theme with a dark charcoal background, crisp white display text, and bold accent colors for operator keys. Use a minimal sans-serif typography and a card-style layout centered on the page.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Basic calculator with arithmetic operations (add, subtract, multiply, divide)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement a backend actor that exposes arithmetic functions: add, subtract, multiply, and divide. Division should return an error or null when dividing by zero.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Calculator App",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

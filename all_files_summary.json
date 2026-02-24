@@ -1,0 +1,16 @@
+{
+  "backend/main.mo": "Motoko actor exposing four async arithmetic functions (add, subtract, multiply, divide) for Float values, with a trap on division by zero.",
+  "feature_evidence.json": "Feature evidence report mapping two calculator features (UI functionality and visual theme) to their implementing files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend source file for build planning reference.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH CSS custom properties for light and dark themes including colors for background, card, primary, and sidebar tokens.",
+  "frontend/index.html": "Minimal HTML entry point that mounts the React app into a root div and loads the main TypeScript module.",
+  "frontend/src/App.tsx": "Root React component that renders the Calculator component inside a full-height background container.",
+  "frontend/src/components/Calculator.tsx": "Full-featured calculator UI component with digit/operator/function buttons, display formatting, chained operation state, keyboard support, and backend calls via the useCalculate mutation hook.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and caches an authenticated or anonymous ICP backend actor, invalidating dependent queries whenever the identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context provider and hook for Internet Identity authentication, managing AuthClient lifecycle, login/logout, and exposing identity and login status to the component tree.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook that dispatches add, subtract, multiply, or divide calls to the backend actor based on the provided operation type.",
+  "frontend/src/index.css": "Global stylesheet importing Inter and JetBrains Mono fonts, defining calculator-specific OKLCH design tokens, and utility classes for display font and button press animations.",
+  "frontend/src/main.tsx": "React app entry point that wraps the App component with QueryClientProvider and InternetIdentityProvider before mounting to the DOM.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration for the frontend, extending the theme with custom fonts, oklch-based color tokens (including calculator-specific tokens), and plugins for typography, container queries, and animations.",
+  "project_state.json": "Tracks the current state of the Calculator App project, including existing UI/theme features already implemented and pending feature requests for a backend arithmetic actor and basic calculator functionality."
+}

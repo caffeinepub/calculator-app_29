@@ -1,0 +1,7 @@
+{
+  "frontend/src/index.css": "Global styles with a dark charcoal OKLCH color system, custom calculator-specific CSS tokens, Google Fonts imports for Inter and JetBrains Mono, and utility classes for button press animations and display font.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with Inter/JetBrains Mono font families, calculator-specific color tokens (calc-bg, calc-btn-digit, calc-btn-operator, etc.), custom shadows, border radii, and keyframe animations for result pop and error shake.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook `useCalculate` that wraps all four arithmetic backend operations (add, subtract, multiply, divide) into a single mutation with typed input/output.",
+  "frontend/src/components/Calculator.tsx": "Full-featured calculator component with display, button grid, state management for chained operations, keyboard support, backend integration via useCalculate mutation, and error handling for division by zero.",
+  "frontend/src/App.tsx": "Root app component that renders the Calculator component centered within a full-height background container."
+}

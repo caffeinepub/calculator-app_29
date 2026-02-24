@@ -1,0 +1,80 @@
+{
+  "kind": "build_request",
+  "title": "Create Calculator App",
+  "projectName": "Swift Calc",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement a backend actor that exposes arithmetic functions: add, subtract, multiply, and divide. Division should return an error or null when dividing by zero.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a calculator app"
+        ]
+      },
+      "acceptanceCriteria": [
+        "add(a, b) returns the correct sum of two numbers",
+        "subtract(a, b) returns the correct difference",
+        "multiply(a, b) returns the correct product",
+        "divide(a, b) returns the correct quotient for non-zero b",
+        "divide(a, 0) returns an error or null result"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a calculator UI with a numeric display, digit buttons (0–9), decimal point, operator buttons (+, −, ×, ÷), equals button, and a clear/reset button. Operations should call the backend actor functions.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a calculator app"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Display shows current input and results",
+        "Digit buttons append digits to the current input",
+        "Operator buttons select the operation and store the first operand",
+        "Equals button triggers the backend call and shows the result",
+        "Clear button resets the display and internal state",
+        "Division by zero displays an appropriate error message on screen"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Apply a clean, modern visual theme with a dark charcoal background, crisp white display text, and bold accent colors for operator keys. Use a minimal sans-serif typography and a card-style layout centered on the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Calculator is centered both vertically and horizontally on the page",
+        "Dark charcoal (#1e1e1e or similar) background is used",
+        "Operator buttons have a distinct accent color differing from digit buttons",
+        "Typography is clean and legible at all button sizes",
+        "Layout is consistent and visually cohesive"
+      ]
+    }
+  ],
+  "constraints": [
+    "All backend logic must reside in a single Motoko actor (backend/main.mo)",
+    "Do not edit files under frontend/src/hooks/ or frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Scientific or advanced calculator functions (e.g., sqrt, sin, log)",
+    "Calculation history or persistent storage",
+    "User authentication or Internet Identity integration",
+    "Mobile app or native platform support"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
